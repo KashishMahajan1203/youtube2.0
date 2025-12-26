@@ -19,10 +19,7 @@ const index = () => {
   // };
   try {
     let channel = user;
-    // if (!channel) {
-    //   notFound();
-    // }
-
+   
     const videos = [
       {
         _id: "1",
@@ -67,6 +64,7 @@ const index = () => {
     );
   } catch (error) {
     console.error("Error fetching channel data:", error);
+   
   }
 };
 

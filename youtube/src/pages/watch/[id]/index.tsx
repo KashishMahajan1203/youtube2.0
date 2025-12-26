@@ -13,8 +13,6 @@ const index = () => {
   const [videos, setvideo] = useState<any>(null);
   const [video, setvide] = useState<any>(null);
   const [loading, setloading] = useState(true);
-
-
   useEffect(() => {
     const fetchvideo = async () => {
       if (!id || typeof id !== "string") return;
@@ -31,8 +29,6 @@ const index = () => {
     };
     fetchvideo();
   }, [id]);
-
-         
   // const relatedVideos = [
   //   {
   //     _id: "1",
